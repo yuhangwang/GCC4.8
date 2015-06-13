@@ -14,8 +14,8 @@ You can download the compiled binary files at the https://bitbucket.org/yuhangwa
 
 ## Installation Notes
 ### Order of installation
-* GMP 4.3.2
-* PPL 0.11 (requires GMP 4.3.2 with C++ support)
+* GMP 4.3.2 (no prerequisite)
+* ISL 0.11.1 (requires GMP 4.3.2)
 * MPFR 2.4.2 (requires GMP 4.3.2)
 * MPC 0.8.1 (requires GMP 4.3.2 & MPFR 2.4.2)
 * CLooG 0.15.11 (requires GMP 4.3.2 & PPL 0.11)
@@ -36,13 +36,13 @@ gmp_dir=${base_dir}/libgmp/4.3.2
 mpfr_dir=${base_dir}/libmpfr/2.4.2
 mpc_dir=${base_dir}/libmpc/0.8.1
 cloog_dir=${base_dir}/libcloog/0.18.0
-ppl_dir=${base_dir}/libisl/0.11.1
+isl_dir=${base_dir}/libisl/0.11.1
 
 export LD_LIBRARY_PATH="${gmp_dir}/lib:${LD_LIBRARY_PATH}"
 export LD_LIBRARY_PATH="${mpfr_dir}/lib:${LD_LIBRARY_PATH}"
 export LD_LIBRARY_PATH="${mpc_dir}/lib:${LD_LIBRARY_PATH}"
 export LD_LIBRARY_PATH="${cloog_dir}/lib:${LD_LIBRARY_PATH}"
-export LD_LIBRARY_PATH="${ppl_dir}/lib:${LD_LIBRARY_PATH}"
+export LD_LIBRARY_PATH="${isl_dir}/lib:${LD_LIBRARY_PATH}"
 ```
 
 Then type the following command in the terminal window:
@@ -58,13 +58,13 @@ set gmp_dir=${base_dir}/libgmp/4.3.2
 set mpfr_dir=${base_dir}/libmpfr/2.4.2
 set mpc_dir=${base_dir}/libmpc/0.8.1
 set cloog_dir=${base_dir}/libcloog/0.18.0
-set ppl_dir=${base_dir}/libisl/0.11.1
+set isl_dir=${base_dir}/libisl/0.11.1
 
 setenv LD_LIBRARY_PATH "${gmp_dir}/lib:${LD_LIBRARY_PATH}"
 setenv LD_LIBRARY_PATH "${mpfr_dir}/lib:${LD_LIBRARY_PATH}"
 setenv LD_LIBRARY_PATH "${mpc_dir}/lib:${LD_LIBRARY_PATH}"
 setenv LD_LIBRARY_PATH "${cloog_dir}/lib:${LD_LIBRARY_PATH}"
-setenv LD_LIBRARY_PATH "${ppl_dir}/lib:${LD_LIBRARY_PATH}"
+setenv LD_LIBRARY_PATH "${isl_dir}/lib:${LD_LIBRARY_PATH}"
 ```
 Then type the following command in the terminal window:
 ```bash
@@ -116,7 +116,7 @@ gmp_dir=${base_dir}/libgmp/4.3.2
 mpfr_dir=${base_dir}/libmpfr/2.4.2
 mpc_dir=${base_dir}/libmpc/0.8.1
 cloog_dir=${base_dir}/libcloog/0.18.0
-ppl_dir=${base_dir}/libisl/0.11.1
+isl_dir=${base_dir}/libisl/0.11.1
 
 
 
